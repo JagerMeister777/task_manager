@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ja" xmlns:th="http://www.w3.org/xhtml">
+<head>
+  <meta charset="UTF-8">
+  <title>ログイン</title>
+</head>
+<body>
+<h2>ログイン</h2>
+<form th:action="@{/login}" th:method="post" th:object="${loginForm}">
+  <div>
+    <label>ログインID</label>
+    <input type="text" th:field="*{loginId}">
+  </div>
+  <div>
+    <label>パスワード</label>
+    <input type="password" th:field="*{password}">
+  </div>
+  <input type="submit" value="ログイン">
+</form>
+</body>
+</html>

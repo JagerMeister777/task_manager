@@ -21,5 +21,8 @@ public class UserInfo {
   private  String name;
 
   @Column(nullable = false)
+  private String loginId;
+
+  @Column(nullable = false)
   private String password;
 }
